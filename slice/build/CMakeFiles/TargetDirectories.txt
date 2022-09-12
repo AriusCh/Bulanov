@@ -1,0 +1,3 @@
+/home/arius/source/slice/build/CMakeFiles/Slice.dir
+/home/arius/source/slice/build/CMakeFiles/edit_cache.dir
+/home/arius/source/slice/build/CMakeFiles/rebuild_cache.dir
