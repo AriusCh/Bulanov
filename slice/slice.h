@@ -11,7 +11,7 @@ private:
 public:
     slice(const std::vector<T>& input) {
         for (auto it : input) {
-             data.push_back(it);
+            data.push_back(it);
         }
     }
 
