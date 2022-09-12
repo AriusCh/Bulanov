@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arius/source/slice
+CMAKE_SOURCE_DIR = /home/arius/source/Bulanov/slice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arius/source/slice/build
+CMAKE_BINARY_DIR = /home/arius/source/Bulanov/slice/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/Slice.dir/clean
 CMakeFiles/Slice.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Slice.dir/build.make CMakeFiles/Slice.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Slice.dir/build.make CMakeFiles/Slice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arius/source/slice/build/CMakeFiles --progress-num=1,2 "Built target Slice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arius/source/Bulanov/slice/build/CMakeFiles --progress-num=1,2 "Built target Slice"
 .PHONY : CMakeFiles/Slice.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Slice.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arius/source/slice/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arius/source/Bulanov/slice/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Slice.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arius/source/slice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arius/source/Bulanov/slice/build/CMakeFiles 0
 .PHONY : CMakeFiles/Slice.dir/rule
 
 # Convenience name for target.

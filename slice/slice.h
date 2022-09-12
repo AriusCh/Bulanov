@@ -2,10 +2,10 @@
 
 #include <cstddef>
 #include <vector>
-#include <memory>
 
 template<class T>
 class slice {
+private:
     std::vector<T> data;
 
 public:
