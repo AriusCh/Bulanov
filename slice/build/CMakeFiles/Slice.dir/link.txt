@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Slice.dir/main.cpp.o -o Slice 
