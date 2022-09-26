@@ -7,11 +7,11 @@ int main() {
     std::cout << "Enter word: ";
     std::cin >> word;
 
-    std::string word_hidden(word.size(), '-');
+    std::string wordHidden(word.size(), '-');
 
-    bool is_revealed = false;
-    while (!is_revealed) {
-        std::cout << word_hidden << std::endl << "Enter letter: ";
+    bool isRevealed = false;
+    while (!isRevealed) {
+        std::cout << wordHidden << std::endl << "Enter letter: ";
         char c;
         std::cin >> c;
         if (std::find(word.cbegin(), word.cend(), c) == word.cend()) {
@@ -20,15 +20,15 @@ int main() {
         }
         do {
             auto it = std::find(word.begin(), word.end(), c);
-            *(word_hidden.begin() + (it - word.cbegin())) = c;
+            *(wordHidden.begin() + (it - word.cbegin())) = c;
             *it = '-';
         }
         while (std::find(word.cbegin(), word.cend(), c) != word.cend());
-        if (std::find(word_hidden.cbegin(), word_hidden.cend(), '-') == word_hidden.cend()) {
-            is_revealed = true;
+        if (std::find(wordHidden.cbegin(), wordHidden.cend(), '-') == wordHidden.cend()) {
+            isRevealed = true;
         }
     }
-    std::cout << "Your word is: " << word_hidden << "! Congratulations!" << std::endl;
+    std::cout << "Your word is: " << wordHidden << "! Congratulations!" << std::endl;
 
     return 0;
 }

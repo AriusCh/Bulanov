@@ -7,8 +7,8 @@
 int read_number() {
     int output;
 
-    bool task_complete = false;
-    while (!task_complete) {
+    bool taskComplete = false;
+    while (!taskComplete) {
         std::string s_num;
         std::cout << "Enter number: ";
         std::cin >> s_num;
@@ -32,7 +32,7 @@ int read_number() {
             std::cout << "Number is too large. Try again." << std::endl;
         }
         output = d_num;
-        task_complete = true;
+        taskComplete = true;
     }
     return output;;
 }

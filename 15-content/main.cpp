@@ -83,7 +83,7 @@ const std::vector<std::string> music = {
     "9"
 };
 
-std::string str_tolower(std::string s) {
+std::string strToLower(std::string s) {
     std::transform(s.begin(), s.end(), s.begin(), [](unsigned char c) { return std::tolower(c); });
     return s;
 }
@@ -131,7 +131,7 @@ std::string get_string(const std::string& what_to_get) {
         std::string input;
         std::cout << what_to_get << ": ";
         std::cin >> input;
-        input = str_tolower(input);
+        input = strToLower(input);
 
         output = input;
         success = true;

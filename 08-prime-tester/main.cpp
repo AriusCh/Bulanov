@@ -4,10 +4,10 @@
 #include <cmath>
 
 int main() {
-    bool complete_flag = 0;
+    bool completeFlag = false;
     std::string s_num;
     int num;
-    while (!complete_flag) {
+    while (!completeFlag) {
         std::cout << "Enter number: ";
         std::cin >> s_num;
         double d_num;
@@ -28,7 +28,7 @@ int main() {
             continue;
         }
         num = d_num;
-        complete_flag = 1;
+        completeFlag = true;
     }
     if (num == 1) {
             std::cout << num << " is a composite number." << std::endl;
