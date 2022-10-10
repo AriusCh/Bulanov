@@ -7,9 +7,7 @@ neuron::neuron() {
     useSigmoid = false;
 }
 
-neuron::neuron(const std::vector<float>& weights, bool useSigmoid) {
-    this->weights = weights;
-    this->useSigmoid = useSigmoid;
+neuron::neuron(const std::vector<float>& weights, bool useSigmoid) : weights(weights), useSigmoid(useSigmoid){
 }
 
 float neuron::calc(const std::vector<float>& num) {
